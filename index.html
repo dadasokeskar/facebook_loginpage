@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f7f9;
+        }
+
+        .container {
+            width: 400px;
+            margin: 100px auto;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        h2 {
+            text-align: center;
+            color: #3b5998;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #3b5998;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #3b5998;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2d4373;
+        }
+
+        .fb-icon {
+            background-image: url('https://www.facebook.com/images/fb_icon_325x325.png');
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .fb-login {
+            background-color: #3b5998;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .fb-login:hover {
+            background-color: #2d4373;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Log In to Facebook</h2>
+        <form>
+            <label for="email">Email or Phone</label>
+            <input type="text" id="email" name="email" placeholder="Email or Phone">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password">
+
+            <input type="submit" value="Log In">
+
+            <div class="fb-login">
+                <span class="fb-icon"></span>
+                Log in with Facebook
+            </div>
+        </form>
+    </div>
+</body>
+</html>
